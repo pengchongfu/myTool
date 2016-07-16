@@ -46,7 +46,7 @@ class thuLog extends Component {
       else{
         this.setState({response:res})
       }
-    })
+    }).catch(()=>{})
   }
   logout() {
     fetch('http://net.tsinghua.edu.cn/do_login.php', {
@@ -65,7 +65,7 @@ class thuLog extends Component {
       else{
         this.setState({response:res})
       }
-    })
+    }).catch(()=>{})
   }
   log() {
     if(this.state.status){
@@ -89,7 +89,7 @@ class thuLog extends Component {
       else {
         this.setState({status:false,response:res});
       }
-    })
+    }).catch(()=>{})
   }
 }
 
